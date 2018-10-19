@@ -1,0 +1,669 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6F1948CE2179DB820008BADC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1948CD2179DB820008BADC /* AppDelegate.swift */; };
+		6F1948D02179DB820008BADC /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1948CF2179DB820008BADC /* MainController.swift */; };
+		6F1948D32179DB820008BADC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F1948D12179DB820008BADC /* Main.storyboard */; };
+		6F1948D52179DB840008BADC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F1948D42179DB840008BADC /* Assets.xcassets */; };
+		6F1948D82179DB840008BADC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F1948D62179DB840008BADC /* LaunchScreen.storyboard */; };
+		6F1948E32179DB840008BADC /* ToanDV_ContactSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1948E22179DB840008BADC /* ToanDV_ContactSampleTests.swift */; };
+		6F1948EE2179DB840008BADC /* ToanDV_ContactSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1948ED2179DB840008BADC /* ToanDV_ContactSampleUITests.swift */; };
+		6F1948FF2179DE260008BADC /* MainPresenterImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1948FE2179DE260008BADC /* MainPresenterImp.swift */; };
+		6F1949012179DEC40008BADC /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1949002179DEC40008BADC /* MainPresenter.swift */; };
+		6F1949042179DF010008BADC /* Contract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1949032179DF010008BADC /* Contract.swift */; };
+		6F1949062179DF640008BADC /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1949052179DF640008BADC /* MainView.swift */; };
+		6F1949082179DFC00008BADC /* ContractDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1949072179DFC00008BADC /* ContractDataSource.swift */; };
+		6F19490E2179E0640008BADC /* ContractLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F19490D2179E0640008BADC /* ContractLocalDataSource.swift */; };
+		6F1949112179E2FA0008BADC /* ContractRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1949102179E2FA0008BADC /* ContractRepository.swift */; };
+		6F1949132179E4900008BADC /* MainDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1949122179E4900008BADC /* MainDataSource.swift */; };
+		6F1949162179E6A70008BADC /* ContractTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1949142179E6A70008BADC /* ContractTableViewCell.swift */; };
+		6F1949172179E6A70008BADC /* ContractTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F1949152179E6A70008BADC /* ContractTableViewCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6F1948DF2179DB840008BADC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6F1948C22179DB820008BADC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6F1948C92179DB820008BADC;
+			remoteInfo = ToanDV_ContactSample;
+		};
+		6F1948EA2179DB840008BADC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6F1948C22179DB820008BADC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6F1948C92179DB820008BADC;
+			remoteInfo = ToanDV_ContactSample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6F1948CA2179DB820008BADC /* ToanDV_ContactSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToanDV_ContactSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F1948CD2179DB820008BADC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6F1948CF2179DB820008BADC /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
+		6F1948D22179DB820008BADC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6F1948D42179DB840008BADC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6F1948D72179DB840008BADC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6F1948D92179DB840008BADC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F1948DE2179DB840008BADC /* ToanDV_ContactSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToanDV_ContactSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F1948E22179DB840008BADC /* ToanDV_ContactSampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToanDV_ContactSampleTests.swift; sourceTree = "<group>"; };
+		6F1948E42179DB840008BADC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F1948E92179DB840008BADC /* ToanDV_ContactSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToanDV_ContactSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F1948ED2179DB840008BADC /* ToanDV_ContactSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToanDV_ContactSampleUITests.swift; sourceTree = "<group>"; };
+		6F1948EF2179DB840008BADC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F1948FE2179DE260008BADC /* MainPresenterImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenterImp.swift; sourceTree = "<group>"; };
+		6F1949002179DEC40008BADC /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
+		6F1949032179DF010008BADC /* Contract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contract.swift; sourceTree = "<group>"; };
+		6F1949052179DF640008BADC /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		6F1949072179DFC00008BADC /* ContractDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContractDataSource.swift; sourceTree = "<group>"; };
+		6F19490D2179E0640008BADC /* ContractLocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContractLocalDataSource.swift; sourceTree = "<group>"; };
+		6F1949102179E2FA0008BADC /* ContractRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContractRepository.swift; sourceTree = "<group>"; };
+		6F1949122179E4900008BADC /* MainDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDataSource.swift; sourceTree = "<group>"; };
+		6F1949142179E6A70008BADC /* ContractTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContractTableViewCell.swift; sourceTree = "<group>"; };
+		6F1949152179E6A70008BADC /* ContractTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContractTableViewCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6F1948C72179DB820008BADC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F1948DB2179DB840008BADC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F1948E62179DB840008BADC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6F1948C12179DB820008BADC = {
+			isa = PBXGroup;
+			children = (
+				6F1948CC2179DB820008BADC /* ToanDV_ContactSample */,
+				6F1948E12179DB840008BADC /* ToanDV_ContactSampleTests */,
+				6F1948EC2179DB840008BADC /* ToanDV_ContactSampleUITests */,
+				6F1948CB2179DB820008BADC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6F1948CB2179DB820008BADC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6F1948CA2179DB820008BADC /* ToanDV_ContactSample.app */,
+				6F1948DE2179DB840008BADC /* ToanDV_ContactSampleTests.xctest */,
+				6F1948E92179DB840008BADC /* ToanDV_ContactSampleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6F1948CC2179DB820008BADC /* ToanDV_ContactSample */ = {
+			isa = PBXGroup;
+			children = (
+				6F19490F2179E2E30008BADC /* Repositories */,
+				6F1949092179DFDA0008BADC /* Source */,
+				6F1949022179DEF50008BADC /* Model */,
+				6F1948FB2179DBC40008BADC /* Main */,
+				6F1948CD2179DB820008BADC /* AppDelegate.swift */,
+				6F1948D12179DB820008BADC /* Main.storyboard */,
+				6F1948D42179DB840008BADC /* Assets.xcassets */,
+				6F1948D62179DB840008BADC /* LaunchScreen.storyboard */,
+				6F1948D92179DB840008BADC /* Info.plist */,
+			);
+			path = ToanDV_ContactSample;
+			sourceTree = "<group>";
+		};
+		6F1948E12179DB840008BADC /* ToanDV_ContactSampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				6F1948E22179DB840008BADC /* ToanDV_ContactSampleTests.swift */,
+				6F1948E42179DB840008BADC /* Info.plist */,
+			);
+			path = ToanDV_ContactSampleTests;
+			sourceTree = "<group>";
+		};
+		6F1948EC2179DB840008BADC /* ToanDV_ContactSampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6F1948ED2179DB840008BADC /* ToanDV_ContactSampleUITests.swift */,
+				6F1948EF2179DB840008BADC /* Info.plist */,
+			);
+			path = ToanDV_ContactSampleUITests;
+			sourceTree = "<group>";
+		};
+		6F1948FB2179DBC40008BADC /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				6F1948CF2179DB820008BADC /* MainController.swift */,
+				6F1948FE2179DE260008BADC /* MainPresenterImp.swift */,
+				6F1949002179DEC40008BADC /* MainPresenter.swift */,
+				6F1949052179DF640008BADC /* MainView.swift */,
+				6F1949122179E4900008BADC /* MainDataSource.swift */,
+				6F1949142179E6A70008BADC /* ContractTableViewCell.swift */,
+				6F1949152179E6A70008BADC /* ContractTableViewCell.xib */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		6F1949022179DEF50008BADC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6F1949032179DF010008BADC /* Contract.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6F1949092179DFDA0008BADC /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				6F19490C2179E0530008BADC /* Local */,
+				6F1949072179DFC00008BADC /* ContractDataSource.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		6F19490C2179E0530008BADC /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				6F19490D2179E0640008BADC /* ContractLocalDataSource.swift */,
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		6F19490F2179E2E30008BADC /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				6F1949102179E2FA0008BADC /* ContractRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6F1948C92179DB820008BADC /* ToanDV_ContactSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F1948F22179DB840008BADC /* Build configuration list for PBXNativeTarget "ToanDV_ContactSample" */;
+			buildPhases = (
+				6F1948C62179DB820008BADC /* Sources */,
+				6F1948C72179DB820008BADC /* Frameworks */,
+				6F1948C82179DB820008BADC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ToanDV_ContactSample;
+			productName = ToanDV_ContactSample;
+			productReference = 6F1948CA2179DB820008BADC /* ToanDV_ContactSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6F1948DD2179DB840008BADC /* ToanDV_ContactSampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F1948F52179DB840008BADC /* Build configuration list for PBXNativeTarget "ToanDV_ContactSampleTests" */;
+			buildPhases = (
+				6F1948DA2179DB840008BADC /* Sources */,
+				6F1948DB2179DB840008BADC /* Frameworks */,
+				6F1948DC2179DB840008BADC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6F1948E02179DB840008BADC /* PBXTargetDependency */,
+			);
+			name = ToanDV_ContactSampleTests;
+			productName = ToanDV_ContactSampleTests;
+			productReference = 6F1948DE2179DB840008BADC /* ToanDV_ContactSampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6F1948E82179DB840008BADC /* ToanDV_ContactSampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F1948F82179DB840008BADC /* Build configuration list for PBXNativeTarget "ToanDV_ContactSampleUITests" */;
+			buildPhases = (
+				6F1948E52179DB840008BADC /* Sources */,
+				6F1948E62179DB840008BADC /* Frameworks */,
+				6F1948E72179DB840008BADC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6F1948EB2179DB840008BADC /* PBXTargetDependency */,
+			);
+			name = ToanDV_ContactSampleUITests;
+			productName = ToanDV_ContactSampleUITests;
+			productReference = 6F1948E92179DB840008BADC /* ToanDV_ContactSampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6F1948C22179DB820008BADC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = doan.van.toan;
+				TargetAttributes = {
+					6F1948C92179DB820008BADC = {
+						CreatedOnToolsVersion = 9.4;
+					};
+					6F1948DD2179DB840008BADC = {
+						CreatedOnToolsVersion = 9.4;
+						TestTargetID = 6F1948C92179DB820008BADC;
+					};
+					6F1948E82179DB840008BADC = {
+						CreatedOnToolsVersion = 9.4;
+						TestTargetID = 6F1948C92179DB820008BADC;
+					};
+				};
+			};
+			buildConfigurationList = 6F1948C52179DB820008BADC /* Build configuration list for PBXProject "ToanDV_ContactSample" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6F1948C12179DB820008BADC;
+			productRefGroup = 6F1948CB2179DB820008BADC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6F1948C92179DB820008BADC /* ToanDV_ContactSample */,
+				6F1948DD2179DB840008BADC /* ToanDV_ContactSampleTests */,
+				6F1948E82179DB840008BADC /* ToanDV_ContactSampleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6F1948C82179DB820008BADC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F1948D82179DB840008BADC /* LaunchScreen.storyboard in Resources */,
+				6F1948D52179DB840008BADC /* Assets.xcassets in Resources */,
+				6F1948D32179DB820008BADC /* Main.storyboard in Resources */,
+				6F1949172179E6A70008BADC /* ContractTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F1948DC2179DB840008BADC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F1948E72179DB840008BADC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6F1948C62179DB820008BADC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F1948D02179DB820008BADC /* MainController.swift in Sources */,
+				6F1949062179DF640008BADC /* MainView.swift in Sources */,
+				6F1949012179DEC40008BADC /* MainPresenter.swift in Sources */,
+				6F1949112179E2FA0008BADC /* ContractRepository.swift in Sources */,
+				6F1948FF2179DE260008BADC /* MainPresenterImp.swift in Sources */,
+				6F19490E2179E0640008BADC /* ContractLocalDataSource.swift in Sources */,
+				6F1949042179DF010008BADC /* Contract.swift in Sources */,
+				6F1948CE2179DB820008BADC /* AppDelegate.swift in Sources */,
+				6F1949082179DFC00008BADC /* ContractDataSource.swift in Sources */,
+				6F1949162179E6A70008BADC /* ContractTableViewCell.swift in Sources */,
+				6F1949132179E4900008BADC /* MainDataSource.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F1948DA2179DB840008BADC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F1948E32179DB840008BADC /* ToanDV_ContactSampleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F1948E52179DB840008BADC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F1948EE2179DB840008BADC /* ToanDV_ContactSampleUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6F1948E02179DB840008BADC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6F1948C92179DB820008BADC /* ToanDV_ContactSample */;
+			targetProxy = 6F1948DF2179DB840008BADC /* PBXContainerItemProxy */;
+		};
+		6F1948EB2179DB840008BADC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6F1948C92179DB820008BADC /* ToanDV_ContactSample */;
+			targetProxy = 6F1948EA2179DB840008BADC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6F1948D12179DB820008BADC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6F1948D22179DB820008BADC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6F1948D62179DB840008BADC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6F1948D72179DB840008BADC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6F1948F02179DB840008BADC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6F1948F12179DB840008BADC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6F1948F32179DB840008BADC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SHYTCSHP5R;
+				INFOPLIST_FILE = ToanDV_ContactSample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "doan.van.toan.contact-sample";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6F1948F42179DB840008BADC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SHYTCSHP5R;
+				INFOPLIST_FILE = ToanDV_ContactSample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "doan.van.toan.contact-sample";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6F1948F62179DB840008BADC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SHYTCSHP5R;
+				INFOPLIST_FILE = ToanDV_ContactSampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "doan.van.toan.ToanDV-ContactSampleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ToanDV_ContactSample.app/ToanDV_ContactSample";
+			};
+			name = Debug;
+		};
+		6F1948F72179DB840008BADC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SHYTCSHP5R;
+				INFOPLIST_FILE = ToanDV_ContactSampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "doan.van.toan.ToanDV-ContactSampleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ToanDV_ContactSample.app/ToanDV_ContactSample";
+			};
+			name = Release;
+		};
+		6F1948F92179DB840008BADC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SHYTCSHP5R;
+				INFOPLIST_FILE = ToanDV_ContactSampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "doan.van.toan.ToanDV-ContactSampleUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ToanDV_ContactSample;
+			};
+			name = Debug;
+		};
+		6F1948FA2179DB840008BADC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SHYTCSHP5R;
+				INFOPLIST_FILE = ToanDV_ContactSampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "doan.van.toan.ToanDV-ContactSampleUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ToanDV_ContactSample;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6F1948C52179DB820008BADC /* Build configuration list for PBXProject "ToanDV_ContactSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F1948F02179DB840008BADC /* Debug */,
+				6F1948F12179DB840008BADC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6F1948F22179DB840008BADC /* Build configuration list for PBXNativeTarget "ToanDV_ContactSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F1948F32179DB840008BADC /* Debug */,
+				6F1948F42179DB840008BADC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6F1948F52179DB840008BADC /* Build configuration list for PBXNativeTarget "ToanDV_ContactSampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F1948F62179DB840008BADC /* Debug */,
+				6F1948F72179DB840008BADC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6F1948F82179DB840008BADC /* Build configuration list for PBXNativeTarget "ToanDV_ContactSampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F1948F92179DB840008BADC /* Debug */,
+				6F1948FA2179DB840008BADC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6F1948C22179DB820008BADC /* Project object */;
+}
